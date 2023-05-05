@@ -20,13 +20,13 @@ int main (int argc, char *argv[])
                 if (s[i] == ',' && s[i - 1] != ',' && s[i + 1] != ',') 
                     cnt ++;
         }
-        printf("单词数=%d\n", cnt);
+        printf("单词数=%d\n", cnt);//输出单词数 
     }
     else if (argv[1][1] == 'c') // 统计字符
     {
         char c;
         while ((c = fgetc(fp)) != EOF) cnt ++;
-        printf("字符数=%d", cnt);
+        printf("字符数=%d", cnt);//输出字符数 
     }
     fclose(fp);
     return 0;
